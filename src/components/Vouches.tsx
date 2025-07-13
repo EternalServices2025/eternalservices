@@ -37,16 +37,16 @@ const Vouches = () => {
   const [vouches, setVouches] = useState<Vouch[]>([
     {
       id: 1,
-      username: "CryptoKing99",
-      message: "Amazing service! Got my Microsoft account instantly and it works perfectly. Customer support was super helpful too!",
+      username: "retrixzz",
+      message: "+rep for Eternal Services, Wmicrosoft account.",
       rating: 5,
       service: "Microsoft Account",
       date: "2024-01-15"
     },
     {
       id: 2,
-      username: "GamerGirl2024",
-      message: "Best Roblox accounts I've ever purchased. Fast delivery and great quality. Will definitely buy again!",
+      username: "s_y_n_a_x",
+      message: "+rep, fast account got 2.",
       rating: 5,
       service: "Roblox Account",
       date: "2024-01-14"
