@@ -53,8 +53,8 @@ const Vouches = () => {
     },
     {
       id: 3,
-      username: "TikTokStar",
-      message: "The TikTok account came with everything as promised. Super satisfied with the purchase and the quick response time.",
+      username: "qmarlin",
+      message: "+rep Eternal Services, fast delivery",
       rating: 5,
       service: "TikTok Account",
       date: "2024-01-13"
