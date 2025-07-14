@@ -24,6 +24,15 @@ const Services = () => {
       color: "from-blue-500 to-cyan-500"
     },
     {
+      title: "Microsoft Account",
+      description: "Premium Microsoft account with Office 365 access",
+      price: "5 Invites",
+      icon: Shield,
+      features: ["Can use as alt or backup", "Fast response", "Office 365 included"],
+      popular: true,
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
       title: "Roblox Account",
       description: "Premium Roblox account with exclusive items",
       price: "3 Invites", 
