@@ -35,63 +35,199 @@ const Vouches = () => {
 
   // Example vouches - now with state management for adding/deleting
   const [vouches, setVouches] = useState<Vouch[]>([
-    {
-      id: 1,
-      username: "retrixzz",
-      message: "+rep for Eternal Services, Wmicrosoft account.",
-      rating: 5,
-      service: "Microsoft Account",
-      date: "2024-01-15"
-    },
-    {
-      id: 2,
-      username: "s_y_n_a_x",
-      message: "+rep, fast account got 2.",
-      rating: 5,
-      service: "Roblox Account",
-      date: "2024-01-14"
-    },
-    {
-      id: 3,
-      username: "qmarlin",
-      message: "+rep Eternal Services, fast delivery",
-      rating: 5,
-      service: "TikTok Account",
-      date: "2024-01-13"
-    },
-    {
-      id: 4,
-      username: "BundleBuyer",
-      message: "Premium bundle is worth every invite! Got multiple accounts at an amazing price. Eternal Services is the best!",
-      rating: 5,
-      service: "Premium Bundle",
-      date: "2024-01-12"
-    },
-    {
-      id: 5,
-      username: "DiscordUser123",
-      message: "Joined their Discord and the community is amazing. Staff is always helpful and vouches for their legitimacy!",
-      rating: 5,
-      service: "Support",
-      date: "2024-01-11"
-    },
-    {
-      id: 6,
-      username: "AltAccountPro",
-      message: "Perfect for creating alts! Clean accounts with no issues. Fast delivery and great communication throughout.",
-      rating: 5,
-      service: "Microsoft Account",
-      date: "2024-01-10"
-    }
-    {
-      id: 7,
-      username: "AltAccountPro",
-      message: "Perfect for creating alts! Clean accounts with no issues. Fast delivery and great communication throughout.",
-      rating: 5,
-      service: "Microsoft Account",
-      date: "2024-01-10"
-    }
-  ]);
+  {
+    id: 1,
+    username: "retrixzz",
+    message: "+rep for Eternal Services, Wmicrosoft account.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2024-01-15"
+  },
+  {
+    id: 2,
+    username: "s_y_n_a_x",
+    message: "+rep, fast account got 2.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2024-01-14"
+  },
+  {
+    id: 3,
+    username: "qmarlin",
+    message: "+rep Eternal Services, fast delivery",
+    rating: 5,
+    service: "TikTok Account",
+    date: "2024-01-13"
+  },
+  {
+    id: 4,
+    username: "BundleBuyer",
+    message: "Premium bundle is worth every invite! Got multiple accounts at an amazing price. Eternal Services is the best!",
+    rating: 5,
+    service: "Premium Bundle",
+    date: "2024-01-12"
+  },
+  {
+    id: 5,
+    username: "DiscordUser123",
+    message: "Joined their Discord and the community is amazing. Staff is always helpful and vouches for their legitimacy!",
+    rating: 5,
+    service: "Support",
+    date: "2024-01-11"
+  },
+  {
+    id: 6,
+    username: "AltAccountPro",
+    message: "Perfect for creating alts! Clean accounts with no issues. Fast delivery and great communication throughout.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2024-01-10"
+  },
+  {
+    id: 7,
+    username: "NightFox",
+    message: "Eternal Services came through again. Bought 3 accounts and all work flawlessly.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2024-01-09"
+  },
+  {
+    id: 8,
+    username: "GamerDude99",
+    message: "Top-tier service. Accounts delivered instantly.",
+    rating: 5,
+    service: "TikTok Account",
+    date: "2024-01-08"
+  },
+  {
+    id: 9,
+    username: "PixelatedHero",
+    message: "Can't believe how fast I got my order. Amazing staff too!",
+    rating: 5,
+    service: "Premium Bundle",
+    date: "2024-01-07"
+  },
+  {
+    id: 10,
+    username: "ZenithBuyer",
+    message: "+rep to Eternal, reliable and quick.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2024-01-06"
+  },
+  {
+    id: 11,
+    username: "TrustyAlt",
+    message: "Trustworthy seller, been buying for months.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2024-01-05"
+  },
+  {
+    id: 12,
+    username: "VouchingBee",
+    message: "Highly recommend! No issues ever.",
+    rating: 5,
+    service: "Support",
+    date: "2024-01-04"
+  },
+  {
+    id: 13,
+    username: "BlitzClient",
+    message: "+rep great Microsoft accounts as always.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2024-01-03"
+  },
+  {
+    id: 14,
+    username: "AltNation",
+    message: "Legit seller. Got my bundle instantly.",
+    rating: 5,
+    service: "Premium Bundle",
+    date: "2024-01-02"
+  },
+  {
+    id: 15,
+    username: "VerifiedUser",
+    message: "100% recommend. Real deals only.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2024-01-01"
+  },
+  {
+    id: 16,
+    username: "Client123",
+    message: "Every order is smooth and secure. Never a single issue.",
+    rating: 5,
+    service: "Support",
+    date: "2023-12-31"
+  },
+  {
+    id: 17,
+    username: "EternalFan",
+    message: "I'm never going anywhere else. 10/10.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2023-12-30"
+  },
+  {
+    id: 18,
+    username: "ChillBuyer",
+    message: "Eternal Services is my go-to for alt accounts. Always smooth.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2023-12-29"
+  },
+  {
+    id: 19,
+    username: "TTVAltHunter",
+    message: "Fast delivery and accounts always work.",
+    rating: 5,
+    service: "TikTok Account",
+    date: "2023-12-28"
+  },
+  {
+    id: 20,
+    username: "CloudWalker",
+    message: "Best bundle I've ever bought. Top quality.",
+    rating: 5,
+    service: "Premium Bundle",
+    date: "2023-12-27"
+  },
+  {
+    id: 21,
+    username: "FriendlyGhost",
+    message: "Insane deals. Join the Discord too!",
+    rating: 5,
+    service: "Support",
+    date: "2023-12-26"
+  },
+  {
+    id: 22,
+    username: "BundleBro",
+    message: "Got 5 working alts in under 5 minutes. Huge W.",
+    rating: 5,
+    service: "Microsoft Account",
+    date: "2023-12-25"
+  },
+  {
+    id: 23,
+    username: "Quickshot",
+    message: "Love the fast delivery. No nonsense service.",
+    rating: 5,
+    service: "Roblox Account",
+    date: "2023-12-24"
+  },
+  {
+    id: 24,
+    username: "HappyBuyer",
+    message: "+rep, fast and friendly. Will buy again.",
+    rating: 5,
+    service: "TikTok Account",
+    date: "2023-12-23"
+  }
+]);
 
   const handleSubmitVouch = (e: React.FormEvent) => {
     e.preventDefault();
